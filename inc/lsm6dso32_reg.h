@@ -1,0 +1,50 @@
+#define DEVICE_CONFIG       0x11
+#define DRIVE_CONFIG        0x13         
+#define INT_CONFIG          0x14
+#define FIFO_CONFIG         0x16
+#define TEMP_DATA1          0x1D
+#define TEMP_DATA0          0x1E
+#define ACCEL_DATA_X1       0x1F
+#define ACCEL_DATA_X0       0x20
+#define ACCEL_DATA_Y1       0x21
+#define ACCEL_DATA_Y0       0x22
+#define ACCEL_DATA_Z1       0x23
+#define ACCEL_DATA_Z0       0x24
+#define GYRO_DATA_X1        0x25
+#define GYRO_DATA_X0        0x26
+#define GYRO_DATA_Y1        0x27
+#define GYRO_DATA_Y0        0x28
+#define GYRO_DATA_Z1        0x29
+#define GYRO_DATA_Z0        0x2A
+#define TMST_FSYNCH         0x2B
+#define TMST_FSYNCL         0x2C
+#define INT_STATUS          0x2D
+#define FIFO_COUNTH         0x2E
+#define FIFO_COUNTL         0x2F
+#define FIFO_DATA           0x30
+#define SIGNAL_PATH_RESET   0x4B
+#define INTF_CONFIG0        0x4C
+#define INTF_CONFIG1        0x4D
+#define PWR_MGMT0           0x4E
+#define GYRO_CONFIG0        0x4F
+#define ACCEL_CONFIG0       0x50
+#define GYRO_CONFIG1        0x51
+#define GYRO_ACCEL_CONFIG0  0x52
+#define ACCEL_CONFIG1       0x53
+#define FIFO_CONFIG1        0x5F
+#define FIFO_CONFIG2        0x60
+#define FIFO_CONFIG3        0x61
+#define INT_CONFIG0         0x63
+#define INT_SOURCE0         0x65
+#define SELF_TEST_CONFIG    0x70
+#define WHO_AM_I            0x75
+#define REG_BANK_SEL        0x76
+
+
+// BANK 1
+
+#define GYRO_CONFIG_STATIC2 0x0B
+#define INTF_CONFIG5        0x7B
+
+// BANK 2
+#define ACCEL_CONFIG_STATIC2 0x03

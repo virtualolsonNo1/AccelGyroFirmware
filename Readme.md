@@ -1,0 +1,7 @@
+# Accelerometer Gyroscope Firmware
+- The purpose of this firmware was to communicate with a lsm6dso32 accelerometer and gyroscope module via the DMA and SPI peripherals to use said data to calculate pose of a robotic arm that will be holding our surgical robot relative to it's previous position. 
+- Whenever the external interrupt (EINT1) is triggered by the intertial module, the EINT1_IRQHandler() function will be called, running the code to properly grab and process the inertial module's accelerometer and gyroscope data
+- As can be seen by the TODOs remaining in the firmware, it was left in an unfinished state. Communication with the inertial module was successful, as was processing said data to be used with a complementary filter to get the most out of the data (making the most out of the long-term accuracy of the accelerometer and short-term accuracy of the gyroscope despite it's very large bias over time). This was done to hopefully get accurate roll and pitch values. 
+- Still left to be done was implementing joystick firmware to use these values, as this project was cancelled before that could be done due to a redesign by our mechanical engineers of the arm that was going to hold our current surgical arm. 
+- exceptionHandlers.c is included simply to show the listed exception handlers were implemented to override the weak functions defined in the startup file. 
+    - Rather than entering the default handler when any such issue occurs, this allows for easier debugging and error handling when potentially finishing this firmware in the future. 
